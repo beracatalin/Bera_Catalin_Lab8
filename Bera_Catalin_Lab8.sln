@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bera_Catalin_Lab8", "Bera_Catalin_Lab8.csproj", "{DFC95184-E54E-4C65-A1DD-4E875CFD3338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFC95184-E54E-4C65-A1DD-4E875CFD3338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC95184-E54E-4C65-A1DD-4E875CFD3338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC95184-E54E-4C65-A1DD-4E875CFD3338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC95184-E54E-4C65-A1DD-4E875CFD3338}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D07B4187-5F56-4D15-9990-499A461EEB0F}
+	EndGlobalSection
+EndGlobal
