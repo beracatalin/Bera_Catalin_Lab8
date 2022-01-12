@@ -11,7 +11,7 @@ using Bera_Catalin_Lab8.Models;
 
 namespace Bera_Catalin_Lab8.Pages.Books
 {
-    public class EditModel : PageModel
+    public class EditModel : BookCategoriesPageModel
     {
         private readonly Bera_Catalin_Lab8.Data.Bera_Catalin_Lab8Context _context;
 
@@ -32,10 +32,17 @@ namespace Bera_Catalin_Lab8.Pages.Books
 
             Book = await _context.Book.FirstOrDefaultAsync(m => m.ID == id);
 
+            Book = await _context.Book
+                .Include(b => b.Publisher)
+                .Include(b => b.BookCategories).ThenInclude(b => b.Category)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.ID == id);
+
             if (Book == null)
             {
                 return NotFound();
             }
+
             return Page();
         }
 

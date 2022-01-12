@@ -11,9 +11,11 @@ namespace Bera_Catalin_Lab8.Models
     {
         public int ID { get; set; }
         public string Title { get; set; }
+        [RegularExpression(@"^[A-Z][a-z]+\s[A-Z][a-z]+$", ErrorMessage = "Numele autorului trebuie sa fie de forma Prenume Nume"), Required, StringLength(50, MinimumLength = 3)]
         [Display(Name = "Book Title")]
         public string Author { get; set; }
         [Column(TypeName = "decimal(6, 2)")]
+        [Range(1, 300)]
         public decimal Price { get; set; }
         [DataType(DataType.Date)]
         public DateTime PublishingDate { get; set; }
